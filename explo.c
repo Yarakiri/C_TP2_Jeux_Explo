@@ -5,24 +5,24 @@
 int main()
 {
 
-    int choisir ;
+    char choisir [50];
+    char chateau [50];
+    char palais [50];
 
     printf("Vous vous trouvez a la ville de Dars\n");
-    printf("Ou souhaitez-vous allez ?\n [1] Le chateau des dragons        [2] Les iles flottantes de Parse");
+    printf("Ou souhaitez-vous allez ?\nchateau -Le chateau des dragons-        palais -Le palais des reves-\n");
 
-    scanf("%d", &choisir);
-
-
+    scanf("%s", choisir);
 
 
-    if (choisir == 1){
+    if ( strcmp (choisir, "chateau") == 0){
         printf("Vous avez atteint le chateau des dragons\n");
 }
 
 
-    if (choisir == 2){
-    printf("Vous avez atteint les iles flottantes de Parse\n");
-
+    if ( strcmp (choisir, "palais") == 0){
+    printf("Vous avez atteint le palais des reves\n");
 }
 
+return 0;
 }
